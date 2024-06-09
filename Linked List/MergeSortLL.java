@@ -88,8 +88,28 @@ public class MergeSortLL {
        return merge(newLeft, newRight);
     }
 
+    //add element at first
+    public void addFirst(int data){
+        //create new node
+        Node newNode = new Node(data);
+        size++;
+
+        if(head == null){
+            head = tail = newNode;
+            return;
+        }
+
+        //newnode next = head // linking step
+        newNode.next = head;
+        
+        //head = newNode
+        head = newNode;
+
+    }
+
+
     public static void main(String args[]){
-        LinkedList ll = new LinkedList();
+        MergeSortLL ll = new MergeSortLL();
         ll.addFirst(1);
         ll.addFirst(2);
         ll.addFirst(3);

@@ -90,7 +90,7 @@ public class Pallindrome{
     }
 
     public static void main(String args[]){
-        LinkedList ll = new LinkedList();
+        Pallindrome ll = new Pallindrome();
         ll.addFirst(1);
         ll.addFirst(2);
         ll.addFirst(2);
